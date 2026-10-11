@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#087443">
+  <title>Sammy Electrical & Electronics Repair Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+    <header class="brand">
+      <div class="mark" aria-hidden="true">SE</div>
+      <div>
+        <p class="eyebrow">WELCOME TO</p>
+        <h1>Sammy Electrical &amp; Electronics</h1>
+        <p class="sub">Repair Shop · Reliable service, easy payments</p>
+      </div>
+    </header>
+
+    <section class="card">
+      <div class="pill">M-PESA PAYMENTS</div>
+      <h2>Make a payment</h2>
+      <p class="muted">Enter the amount and Safaricom number you want to use for payment.</p>
+
+      <form id="payment-form">
+        <label for="amount">Amount (KSh)</label>
+        <div class="input-wrap"><span>KSh</span><input id="amount" name="amount" type="number" min="1" max="250000" step="1" placeholder="e.g. 500" required></div>
+
+        <label for="phone">M-Pesa phone number</label>
+        <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="07XXXXXXXX or 2547XXXXXXXX" required>
+
+        <button type="submit" id="pay-button">Pay with M-Pesa</button>
+      </form>
+      <div id="notice" class="notice" role="status" aria-live="polite">
+        <strong>Demo mode:</strong> This page is not yet connected to Safaricom. No payment will be requested or processed.
+      </div>
+    </section>
+
+    <section class="info">
+      <h3>Need help?</h3>
+      <p>Contact Sammy Electrical &amp; Electronics Repair Shop directly for payment confirmation or repair enquiries.</p>
+    </section>
+    <footer>© <span id="year"></span> Sammy Electrical &amp; Electronics Repair Shop</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
